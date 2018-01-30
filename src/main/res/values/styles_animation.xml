@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Animation.Transfer" mce_bogus="1" parent="@android:style/Animation.Translucent">
+        <item name="android:windowExitAnimation">@anim/push_right_out</item>
+        <item name="android:windowEnterAnimation">@anim/push_right_in</item>
+    </style>
+
+    <style name="Theme.Animation.Transfer.Override" mce_bogus="1" parent="Theme.Animation.Transfer">
+        <item name="android:windowExitAnimation">@anim/push_alpha_out</item>
+        <item name="android:windowEnterAnimation">@anim/push_alpha_in</item>
+    </style>
+
+    <!-- ActionSheet进出动画 -->
+    <style name="ActionSheetDialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+    <!-- ActionSheet进出动画 -->
+    <style name="InvestProgressAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_alpha_in</item>
+        <item name="android:windowExitAnimation">@anim/push_alpha_out</item>
+    </style>
+
+</resources>

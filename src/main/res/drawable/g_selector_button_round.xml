@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/g_solid_round_3_gray_s3" android:state_enabled="false" />
+    <item android:drawable="@drawable/g_solid_round_3_foreground" android:state_enabled="true" />
+</selector>
+

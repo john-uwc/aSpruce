@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MPtrClassicFrameLayout">
+        <attr format="reference" name="ptr_scrollable_view_id"/>
+    </declare-styleable>
+</resources>

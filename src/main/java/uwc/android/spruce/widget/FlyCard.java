@@ -97,7 +97,7 @@ public class FlyCard extends FrameLayout {
             case Event.id_card_dismiss:
                 if (!mCardHost.isShowing()) break;
                 mCardHost.dismiss();
-                mCardHost.getContentView().startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.bottom_quit_anim));
+                mCardHost.getContentView().startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.push_bottom_out));
                 mCardHost.setContentView(null);
                 break;
             case Event.id_show_card:
@@ -105,7 +105,7 @@ public class FlyCard extends FrameLayout {
                 View card = cardHolder.onCreateView(LayoutInflater.from(getContext()));
                 mCardHost.setContentView(card);
                 mCardHost.showAtLocation(this, Gravity.NO_GRAVITY, 0, 0);
-                card.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.bottom_enter_anim));
+                card.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.push_bottom_in));
                 break;
             default:
                 break;

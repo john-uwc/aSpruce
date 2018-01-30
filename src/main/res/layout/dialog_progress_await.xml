@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_64_a75"
+    android:gravity="center"
+    android:padding="@dimen/margin_35"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_loading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/icon_loading"
+        android:tint="@color/gray_97_aff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="请稍后..."
+        android:textColor="@color/white"
+        android:textSize="@dimen/ts_17" />
+</LinearLayout>

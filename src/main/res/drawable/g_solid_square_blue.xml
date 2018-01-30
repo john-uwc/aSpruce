@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置固定填充色 -->
+    <solid android:color="@color/white" />
+    <size
+        android:width="90dp"
+        android:height="90dp" />
+    <!-- 设置描边 -->
+    <stroke
+        android:width="2dp"
+        android:color="@color/blue_108"></stroke>
+</shape>

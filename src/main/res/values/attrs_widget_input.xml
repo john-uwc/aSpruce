@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="hint" format="string" />
+
+
+    <declare-styleable name="PhoneNumberInputEdit">
+        <attr name="hint" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordInputEdit">
+        <attr name="cipherDisable" format="boolean" />
+        <attr name="hint" />
+    </declare-styleable>
+
+    <declare-styleable name="BlockInputEdit">
+        <attr name="length" format="integer" />
+        <attr name="padding" format="dimension" />
+        <attr name="appearance" format="enum">
+            <enum name="underline" value="0" />
+            <enum name="rect" value="1" />
+        </attr>
+        <attr name="textColor" />
+        <attr name="textColorHint" />
+        <attr name="hint" />
+        <attr name="textSize" />
+        <attr name="cipherEnable" format="boolean" />
+        <attr name="borderWidth" format="dimension" />
+        <attr name="borderColor" format="color" />
+        <attr name="isCursorEnable" format="boolean" />
+        <attr name="cursorColor" format="color" />
+        <attr name="cursorFlashTime" format="integer" />
+    </declare-styleable>
+</resources>

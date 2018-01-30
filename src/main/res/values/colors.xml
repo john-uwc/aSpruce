@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 灰度 -->
+    <color name="gray_00_aff">#ff000000</color>
+    <color name="gray_00_a90">#90000000</color>
+    <color name="gray_00_a77">#77000000</color>
+    <color name="gray_00_a60">#60000000</color>
+    <color name="gray_00_a00">#00000000</color>
+    <color name="gray_24_aff">#242424</color>
+    <color name="gray_32_aff">#323232</color>
+    <color name="gray_4a_aff">#4a4a4a</color>
+    <color name="gray_4a_a60">#604a4a4a</color>
+    <color name="gray_64_a75">#75646464</color>
+    <color name="gray_66_aff">#666666</color>
+    <color name="gray_81_aff">#818181</color>
+    <color name="gray_97_aff">#979797</color>
+    <color name="gray_9b_aff">#9b9b9b</color>
+    <color name="gray_bf_a9f">#9fbfbfbf</color>
+    <color name="gray_df_aff">#dfdfdf</color>
+    <color name="gray_ef_aff">#efefef</color>
+    <color name="gray_f4_aff">#f4f4f4</color>
+    <color name="gray_f6_aff">#f6f6f6</color>
+    <color name="gray_f9_aff">#f9f9f9</color>
+    <color name="gray_ff_aff">#ffffff</color>
+
+
+    <!-- 黑白色 -->
+    <color name="white">@color/gray_ff_aff</color>
+    <color name="black">@color/gray_00_aff</color>
+
+
+    <!-- 红色 -->
+    <color name="red_06">#ff2aa2</color>
+    <color name="red_08">#ff4d46</color>
+    <color name="red_09">#ff5555</color>
+    <color name="red_10">#ff6627</color>
+    <color name="red_11">#ff6766</color>
+    <color name="red_12">#e84e7a</color>
+    <color name="red_15">#ef6f58</color>
+    <color name="red_dot">#d0021b</color>
+
+    <!-- 绿色 -->
+    <color name="green_01">#b8e986</color>
+    <color name="green_1" >#2cb97d</color>
+    <color name="green_2" >#7ED321</color>
+    <color name="green_03">#2cb97d</color>
+
+    <!-- 蓝色 -->
+    <color name="blue_105">#4a90e2</color>
+    <color name="blue_106">#4268b9</color>
+    <color name="blue_108">#5d82d1</color>
+    <color name="blue_206">#1eaed2</color>
+    <color name="blue_208">#35c6ea</color>
+    <color name="blue_301">#56b3dc</color>
+    <color name="blue_306">#0c87c6</color>
+    <color name="blue_308">#17a3eb</color>
+    <color name="blue_309">#A5DBF1</color>
+    <color name="blue_310">#03A9F4</color>
+    <color name="blue_311">#e503A9F4</color>
+    <color name="blue_313">#42C4FF</color>
+    <color name="blue_314">#03a9f4</color>
+    <color name="blue_322">#0099EE</color>
+    <color name="blue_315">#e5f7ff</color>
+    <color name="blue_316">#9ebfe3</color>
+    <color name="blue_317">#6699cc</color>
+    <color name="blue_318">#515f77</color>
+    <color name="blue_319">#28354d</color>
+    <color name="blue_320">#7387a2</color>
+    <color name="blue_321">#8398b4</color>
+    <color name="blue_323">#f5f5f5</color>
+    <color name="blue_324">#8392a0</color>
+    <color name="blue_325">#243742</color>
+
+    <!-- 黄色 -->
+    <color name="yellow_01">#ffd9ba</color>
+    <color name="yellow_02">#f58323</color>
+
+    <color name="transparent">@color/gray_00_a00</color>
+    <color name="translucent">@color/gray_00_a77</color>
+
+
+    <!--global palette-->
+    <!--背景颜色-->
+    <color name="g_background">@color/gray_f9_aff</color>
+    <!--标题背景颜色-->
+    <color name="g_background_title">@color/white</color>
+    <!--前景颜色-->
+    <color name="g_foreground">@color/yellow_02</color>
+    <!--前景普通文本颜色-->
+    <color name="g_foreground_text_secondary">@color/gray_97_aff</color>
+    <color name="g_foreground_text">@color/gray_24_aff</color>
+    <!--前景链接颜色: 用户名、话题等-->
+    <color name="g_foreground_link">#398ED3</color>
+    <!--前景线条颜色-->
+    <color name="g_divider">@color/gray_df_aff</color>
+    <!--前景光标颜色-->
+    <color name="g_cursor">@color/blue_105</color>
+</resources>

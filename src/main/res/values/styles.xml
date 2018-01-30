@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <!--window background-->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <!--no actionbar and title-->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--foreground-->
+        <item name="colorPrimary">@color/g_foreground</item>
+        <item name="colorPrimaryDark">@color/g_foreground</item>
+        <item name="colorAccent">@color/g_foreground</item>
+        <!--text color-->
+        <item name="android:textColorPrimary">@color/g_foreground_text</item>
+
+        <item name="android:listDivider">@drawable/g_divider</item>
+        <item name="editTextStyle">@style/Theme.EditText</item>
+        <item name="actionBarStyle">@style/Theme.ActionBar</item>
+    </style>
+</resources>

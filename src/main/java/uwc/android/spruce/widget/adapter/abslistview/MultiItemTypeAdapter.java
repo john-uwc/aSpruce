@@ -13,7 +13,7 @@ import uwc.android.spruce.widget.adapter.abslistview.base.ItemViewDelegateManage
 
 import java.util.List;
 
-import uwc.acore.util.Logger;
+import uwc.core.util.Logger;
 
 public class MultiItemTypeAdapter<T> extends BaseAdapter {
     protected final String TAG = this.getClass().getSimpleName();

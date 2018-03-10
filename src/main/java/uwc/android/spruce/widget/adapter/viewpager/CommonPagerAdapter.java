@@ -12,7 +12,7 @@ import uwc.android.spruce.widget.adapter.ViewHolder;
 
 import java.util.List;
 
-import uwc.acore.util.Logger;
+import uwc.core.util.Logger;
 
 /**
  * 通用的 PagerAdapter

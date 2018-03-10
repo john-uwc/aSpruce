@@ -5,7 +5,7 @@ import android.content.Context;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import uwc.acore.util.DateTime;
+import uwc.core.util.DateTime;
 import uwc.android.spruce.R;
 
 /***

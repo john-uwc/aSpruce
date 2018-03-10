@@ -111,7 +111,6 @@ public class HybridWebView extends WebView {
             CookieManager.getInstance().setAcceptThirdPartyCookies(this, true);
         }
 
-        this.setWebChromeClient(new SimpleChromeClient(getActivity()));
         this.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, final String url) {
@@ -136,13 +135,6 @@ public class HybridWebView extends WebView {
                 return super.shouldOverrideUrlLoading(view, url);
             }
         });
-
-        initHybrid();
-    }
-
-    // TODO: 接入 Hybrid
-    private void initHybrid() {
-
     }
 
     @Override
@@ -169,7 +161,6 @@ public class HybridWebView extends WebView {
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         getSettings().setUserAgentString(sUAHolder.query());
-        // TODO: 接入 Hybrid
     }
 
     @Override
@@ -181,83 +172,10 @@ public class HybridWebView extends WebView {
         } else {
 
         }
-
     }
 
     @Override
     public void loadData(String data, String mimeType, String encoding) {
         loadUrl("data:" + mimeType + ";charset=" + encoding + "," + data);
-    }
-
-    /**
-     * 拼接请求参数
-     */
-    public static String paddingParms(String mTargetUrl, HashMap<String, String> parms) {
-        StringBuilder url = new StringBuilder(mTargetUrl);
-        if (parms != null && parms.size() > 0) {
-            int idx = 0;
-            int count = parms.size();
-            url.append("?");
-            String key;
-            String val;
-            for (Object o : parms.entrySet()) {
-                Map.Entry entry = (Map.Entry) o;
-                key = (String) entry.getKey();
-                url.append(key);
-                url.append("=");
-                val = (String) entry.getValue();
-                url.append(val);
-                if (idx < count - 1) {
-                    url.append("&");
-                    idx++;
-                }
-            }
-        }
-        return url.toString();
-    }
-
-    /**
-     * 默认的 WebChromeClient
-     */
-    public static class SimpleChromeClient extends WebChromeClient {
-        protected Activity mActivity;
-
-        public SimpleChromeClient(Activity activity) {
-            mActivity = activity;
-        }
-
-        @Override
-        public boolean onConsoleMessage(ConsoleMessage consoleMessage) {
-            if (consoleMessage != null) {
-                String jsMessage = consoleMessage.message();
-                if (!TextUtils.isEmpty(jsMessage)) {
-                    Log.i("js_info", jsMessage);
-                }
-            }
-
-            return super.onConsoleMessage(consoleMessage);
-        }
-
-        @Override
-        public void onGeolocationPermissionsShowPrompt(final String origin, final GeolocationPermissions.Callback callback) {
-            DialogInterface.OnClickListener dialogButtonOnClickListener = new DialogInterface.OnClickListener() {
-
-                @Override
-                public void onClick(DialogInterface dialog, int clickedButton) {
-                    if (DialogInterface.BUTTON_POSITIVE == clickedButton) {
-                        callback.invoke(origin, true, true);
-                    } else if (DialogInterface.BUTTON_NEGATIVE == clickedButton) {
-                        callback.invoke(origin, false, false);
-                    }
-                }
-            };
-
-            new AlertDialog.Builder(mActivity)
-                    .setMessage("是否允许获取您的位置信息?")
-                    .setPositiveButton("允许", dialogButtonOnClickListener)
-                    .setNegativeButton("拒绝", dialogButtonOnClickListener)
-                    .show();
-            super.onGeolocationPermissionsShowPrompt(origin, callback);
-        }
     }
 }

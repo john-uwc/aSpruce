@@ -18,7 +18,7 @@ import android.view.TextureView;
 import java.io.File;
 
 /**
- * Created by arthur on 17/1/24.
+ * Created by steven on 17/1/24.
  */
 public class VideoView extends TextureView implements TextureView.SurfaceTextureListener {
 

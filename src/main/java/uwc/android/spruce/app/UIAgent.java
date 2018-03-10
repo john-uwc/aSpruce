@@ -17,7 +17,7 @@ import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
 
-import uwc.acore.p.Redis;
+import uwc.core.p.Redis;
 
 /**
  * Created by steven on 17/4/26.

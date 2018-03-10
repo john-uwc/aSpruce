@@ -17,7 +17,7 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
-import uwc.acore.util.Validator;
+import uwc.core.util.Validator;
 import uwc.android.spruce.R;
 
 /**

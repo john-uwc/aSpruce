@@ -6,6 +6,7 @@ repositories {
 
 android {
 	compileSdkVersion 25
+	buildToolsVersion "25.0.2"
 
 	defaultConfig {
 		minSdkVersion 15
@@ -28,7 +29,7 @@ android {
 
 dependencies{
 	compile fileTree(dir: 'libs', include: ['*.jar'])
-	compile 'com.github.john-uwc:aCore:master-SNAPSHOT'
+	compile 'com.github.john-uwc:xCore:master-SNAPSHOT'
 
 	compile 'de.greenrobot:eventbus:2.4.0'
 

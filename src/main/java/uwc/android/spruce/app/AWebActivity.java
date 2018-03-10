@@ -12,7 +12,7 @@ import android.widget.TextView;
 import uwc.android.spruce.R;
 import uwc.android.spruce.webkit.HybridWebChromeClient;
 import uwc.android.spruce.webkit.HybridWebView;
-import uwc.android.spruce.webkit.WebVideoManager;
+import uwc.android.spruce.webkit.FullScreenHolder;
 
 /**
  * Created by steven on 17/4/27.
@@ -41,11 +41,9 @@ public class AWebActivity extends AActivity {
                 ViewGroup.LayoutParams.MATCH_PARENT
         );
 
-        mWebView.setWebChromeClient(new HybridWebChromeClient(this)
+        mWebView.setWebChromeClient(new HybridWebChromeClient(this, mWebView)
                 .setTitle((TextView) mTitleBar.getCenterTextView())
-                .setProgressBar((ProgressBar) findViewById(R.id.pb))
-                .setVideoManager(new WebVideoManager(mWebView))
-        );
+                .setProgressBar((ProgressBar) findViewById(R.id.pb)));
 
         initWebView(mWebView);
     }

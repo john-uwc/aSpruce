@@ -6,7 +6,7 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.support.multidex.MultiDex;
 
-import uwc.core.util.Logger;
+import uwc.util.Logger;
 
 /**
  * Created by Arthur on 17/4/24.

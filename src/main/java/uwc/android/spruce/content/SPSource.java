@@ -4,8 +4,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import uwc.core.p.Redis;
-import uwc.core.p.Source;
+import uwc.p.Redis;
+import uwc.p.Source;
 
 /**
  * Created by steven on 23/01/2018.

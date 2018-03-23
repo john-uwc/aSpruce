@@ -13,7 +13,7 @@ import uwc.android.spruce.widget.adapter.recyclerview.base.ItemViewDelegateManag
 
 import java.util.List;
 
-import uwc.core.util.Logger;
+import uwc.util.Logger;
 
 /**
  * Created by zhy on 16/4/9.
